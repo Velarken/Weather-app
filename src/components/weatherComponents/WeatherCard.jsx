@@ -2,13 +2,13 @@ const WeatherCard = ({
     cardType,
     cardData
 }) => {
-    const listData =() => {
+    const listData = cardData.map(data => {
         return (
             <>
-            
+                <li>{data}</li>
             </>
         )
-    }
+    })
     return (
         <>
             <h2>{cardType}</h2>
