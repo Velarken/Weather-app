@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import DayForecast from "./weatherComponents/DayForecast";
 import weatherIcons from "../data/weatherIcons.js";
 import weeklyForecast from '../data/testingData.js'
@@ -7,8 +7,7 @@ import WeatherCard from "./weatherComponents/WeatherCard.jsx";
 const WeatherPanel = ({
     displayData,
 }) => {
-    const [isLoadingOver,setIsLoadingOver] = useState(false)
-
+    const [isLoadingOver,setIsLoadingOver] = useState(false);
     useEffect(() => {
         setTimeout(() => {
             setIsLoadingOver(true)
