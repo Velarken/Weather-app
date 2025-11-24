@@ -19,6 +19,7 @@ function App() {
                     setUserState={setUserState}
                     userCity={userCity}
                     userState={userState}
+                    fetchedData={fetchedData}
                     setFetchedData={setFetchedData}
                   />
                 : <WeatherPanel 
