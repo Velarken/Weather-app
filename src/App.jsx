@@ -21,6 +21,7 @@ function App() {
                     userState={userState}
                     fetchedData={fetchedData}
                     setFetchedData={setFetchedData}
+                    isSearchComplete={isSearchComplete}
                   />
                 : <WeatherPanel 
                     displayData={fetchedData}
