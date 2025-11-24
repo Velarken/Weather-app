@@ -36,9 +36,14 @@ const WeatherPanel = ({
             {!isLoadingOver 
                 ? <p>Loading...</p>
                 : (
-                    <div className='weekOverview flex-row'>
-                        {weeklyWeather}
-                    </div>
+                    <>
+                        <div className='weekOverview flex-row'>
+                            {weeklyWeather}
+                        </div>
+                        <div className="weatherCardContainer">
+                            {/* Current day weather specifics go on cards displayed dynamically here in an accordian format */}
+                        </div>
+                    </>
                 )
             }
         </>
