@@ -7,12 +7,12 @@ const WeatherPanel = ({
     displayData,
 }) => {
     const [isLoadingOver,setIsLoadingOver] = useState(false)
+
     useEffect(() => {
         setTimeout(() => {
             setIsLoadingOver(true)
         }, 1500);
-        console.table(displayData)
-    }, []);
+    }, [isLoadingOver]); // dependency so that each page load can show a brief loading screen
     const weeklyWeather = weeklyForecast.map((day) => {
         return (
             <>
