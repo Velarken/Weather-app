@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import DayForecast from "./weatherComponents/DayForecast";
-import weatherIcons from "../weatherIcons";
-import weeklyForecast from '../weatherData.js'
+import weatherIcons from "../data/weatherIcons.js";
+import weeklyForecast from '../data/testingData.js'
 
 const WeatherPanel = ({
     displayData,
