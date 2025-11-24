@@ -10,7 +10,35 @@ const weeklyForecast = [
     gust:10,
     conditions:'scattered showers',
     desc:'sunny miday with storms forming in the afternoon.',
-    icon:weatherIcons[9].src
+    icon:weatherIcons[9].src,
+    precipDetails: [
+        {
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
     {
     min:'-15',
@@ -21,7 +49,7 @@ const weeklyForecast = [
     gust:10,
     conditions:'sooo much hail',
     desc:'strong hailstorms dominate the day\'s outlook',
-    icon:weatherIcons[6].src
+    icon:weatherIcons[6].src,
     },
     {
     min:100,
