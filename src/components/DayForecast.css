@@ -1,0 +1,15 @@
+.flex-row {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.flex-col {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.dayDisplay {
+    flex:1;
+    margin:2vw;
+}
