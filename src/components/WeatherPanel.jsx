@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import DayForecast from "./weatherComponents/DayForecast";
 import weatherIcons from "../data/weatherIcons.js";
 import weeklyForecast from '../data/testingData.js'
+import WeatherCard from "./weatherComponents/WeatherCard.jsx";
 
 const WeatherPanel = ({
     displayData,
@@ -27,6 +28,15 @@ const WeatherPanel = ({
                     conditionsDescription={day.desc}
                     weatherIcon={day.icon}
                 />
+                <WeatherCard 
+                    cardType={'Precipitaion'}
+                    cardData={day.precipDetails}
+                />
+                <WeatherCard
+                    cardType={'Winds'}
+                    cardData={day.windDetails}
+                />
+
             </>
         )
     })
