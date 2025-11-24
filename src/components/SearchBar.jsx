@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react"
 
 
 const SearchBar = ({
@@ -7,6 +8,7 @@ const SearchBar = ({
     userCity,
     userState,
     handleTransition,
+    fetchedData,
     setFetchedData
 }) => {
     // data fetch should probably go inside of useEffect with userCity & userState as dependencies
@@ -34,8 +36,8 @@ const SearchBar = ({
     const sanitizeInput = (input) => {
         return input.toLowerCase().replace(/\s/g, "%2C")
     }
-    function handleTransition() {
-        fetchData();
+    async function handleTransition() {
+        await fetchData();
         setIsSearchComplete(true);
     }
     return (
@@ -47,3 +49,15 @@ const SearchBar = ({
     )
 }
 export default SearchBar;
+
+/* 
+const timeoutId = useRef(null)
+    useEffect(() => {
+        if (fetchedData === null) {
+            timeoutId.current = setTimeout(() => {
+                console.log('data still null...')
+                setFetchedData()
+            })
+        }
+    })
+*/
