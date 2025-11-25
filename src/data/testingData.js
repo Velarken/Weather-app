@@ -13,28 +13,34 @@ const weeklyForecast = [
     icon:weatherIcons[9].src,
     precipDetails: [
         {
+            key:'precip',
             title:'Precipitation Chance',
             data: '10%'
         },
         {
+            key:'precipType',
             title: 'Precipitation Type',
             data: 'Rain'
         },
         {
+            key:'precipAmount',
             title: 'Precipitation Amount',
             data: '2 inches'
         }
     ],
     windDetails: [
         {
+            key:'wind',
             title: 'Wind Speed',
             data: '2 mph'
         },
         {
+            key:'windGust',
             title: 'Wind Gusts',
             data: '10 mph'
         },
         {
+            key:'windFacing',
             title: 'Wind Direction',
             data: 'Northwest'
         }
@@ -50,6 +56,40 @@ const weeklyForecast = [
     conditions:'sooo much hail',
     desc:'strong hailstorms dominate the day\'s outlook',
     icon:weatherIcons[6].src,
+    precipDetails: [
+        {
+            key:'precip',
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            key:'precipType',
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            key:'precipAmount',
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            key:'wind',
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            key:'windGust',
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            key:'windFacing',
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
     {
     min:100,
@@ -60,7 +100,41 @@ const weeklyForecast = [
     gust:80,
     conditions:'boiling surfaces abound',
     desc:'instant death awaits those travelling today, pack your sunscreen!',
-    icon:weatherIcons[0].src
+    icon:weatherIcons[0].src,
+    precipDetails: [
+        {
+            key:'precip',
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            key:'precipType',
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            key:'precipAmount',
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            key:'wind',
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            key:'windGust',
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            key:'windFacing',
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
     {
     min:0,
@@ -71,7 +145,41 @@ const weeklyForecast = [
     gust:8,
     conditions:'snow showers likely',
     desc:'between 3-5 inches of snow',
-    icon:weatherIcons[8].src
+    icon:weatherIcons[8].src,
+    precipDetails: [
+        {
+            key:'precip',
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            key:'precipType',
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            key:'precipAmount',
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            key:'wind',
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            key:'windGust',
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            key:'windFacing',
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
     {
     min:25,
@@ -82,7 +190,41 @@ const weeklyForecast = [
     gust:10,
     conditions:'mostlysunny',
     desc:'sunny miday with storms forming in the afternoon.',
-    icon:weatherIcons[0].src
+    icon:weatherIcons[0].src,
+    precipDetails: [
+        {
+            key:'precip',
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            key:'precipType',
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            key:'precipAmount',
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            key:'wind',
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            key:'windGust',
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            key:'windFacing',
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
     {
     min:25,
@@ -93,7 +235,41 @@ const weeklyForecast = [
     gust:10,
     conditions:'mostlysunny',
     desc:'sunny miday with storms forming in the afternoon.',
-    icon:weatherIcons[0].src
+    icon:weatherIcons[0].src,
+    precipDetails: [
+        {
+            key:'precip',
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            key:'precipType',
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            key:'precipAmount',
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            key:'wind',
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            key:'windGust',
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            key:'windFacing',
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
     {
     min:25,
@@ -104,7 +280,41 @@ const weeklyForecast = [
     gust:10,
     conditions:'mostlysunny',
     desc:'sunny miday with storms forming in the afternoon.',
-    icon:weatherIcons[0].src
+    icon:weatherIcons[0].src,
+    precipDetails: [
+        {
+            key:'precip',
+            title:'Precipitation Chance',
+            data: '10%'
+        },
+        {
+            key:'precipType',
+            title: 'Precipitation Type',
+            data: 'Rain'
+        },
+        {
+            key:'precipAmount',
+            title: 'Precipitation Amount',
+            data: '2 inches'
+        }
+    ],
+    windDetails: [
+        {
+            key:'wind',
+            title: 'Wind Speed',
+            data: '2 mph'
+        },
+        {
+            key:'windGust',
+            title: 'Wind Gusts',
+            data: '10 mph'
+        },
+        {
+            key:'windFacing',
+            title: 'Wind Direction',
+            data: 'Northwest'
+        }
+    ]
     },
 ]
 export default weeklyForecast;

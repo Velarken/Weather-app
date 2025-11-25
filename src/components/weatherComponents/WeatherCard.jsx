@@ -13,7 +13,7 @@ const WeatherCard = ({
     return (
         <>
             <h2>{cardType}</h2>
-            <div className="dayDetails">
+            <div className="dayDetails flex-col">
                 {listData}
             </div>
         </>

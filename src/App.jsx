@@ -14,6 +14,7 @@ function App() {
           <h1>Weather App</h1>
             {!isSearchComplete 
                 ? <SearchBar 
+                    isSearchComplete={isSearchComplete}
                     setIsSearchComplete={setIsSearchComplete}
                     setUserCity={setUserCity}
                     setUserState={setUserState}
@@ -21,7 +22,6 @@ function App() {
                     userState={userState}
                     fetchedData={fetchedData}
                     setFetchedData={setFetchedData}
-                    isSearchComplete={isSearchComplete}
                   />
                 : <WeatherPanel 
                     displayData={fetchedData}

@@ -14,9 +14,14 @@ const WeatherPanel = ({
         }, 1500);
     }, [isLoadingOver]); // dependency so that each page load can show a brief loading screen
     const weeklyWeather = weeklyForecast.map((day) => {
+        const precipDetails = day.precipDetails
+        const windDetails = day.windDetails
+        console.table(windDetails)
+        console.table(precipDetails)
         return (
-            <>
+            <div className='flex-col'>
                 <DayForecast
+                    key={'dayForecast'}
                     minTemp={day.min}
                     maxTemp={day.max}
                     humidity={day.humid}
@@ -27,16 +32,19 @@ const WeatherPanel = ({
                     conditionsDescription={day.desc}
                     weatherIcon={day.icon}
                 />
-                <WeatherCard 
-                    cardType={'Precipitaion'}
-                    cardData={day.precipDetails}
-                />
-                <WeatherCard
-                    cardType={'Winds'}
-                    cardData={day.windDetails}
-                />
-
-            </>
+                <div className="cardContainer flex-col">
+                    <WeatherCard 
+                        key={'precip'}
+                        cardType={'Precipitaion'}
+                        cardData={precipDetails}
+                    />
+                    <WeatherCard
+                        key={'wind'}
+                        cardType={'Winds'}
+                        cardData={windDetails}
+                    />
+                </div>
+            </div>
         )
     })
     

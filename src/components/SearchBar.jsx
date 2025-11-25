@@ -7,16 +7,11 @@ const SearchBar = ({
     setUserState,
     userCity,
     userState,
-    handleTransition,
     fetchedData,
     setFetchedData,
     isSearchComplete
 }) => {
-    useEffect(() => {
-        if (isSearchComplete) {
-            setIsSearchComplete(true)
-        }
-    }, [fetchedData])
+   
     // data fetch should probably go inside of useEffect with userCity & userState as dependencies
     const fetchData = async () => {
         try {
@@ -42,9 +37,10 @@ const SearchBar = ({
     const sanitizeInput = (input) => {
         return input.toLowerCase().replace(/\s/g, "%2C")
     }
-    const handleTransition = async() => {
-        await fetchData();
-        // setIsSearchComplete(true);
+    const handleTransition = () => {
+        // fetchData();
+        console.log('...fetching data')
+        setIsSearchComplete(true);
     }
     return (
         <form className='weatherPanel'>
