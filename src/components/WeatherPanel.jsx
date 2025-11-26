@@ -13,11 +13,12 @@ const WeatherPanel = ({
             setIsLoadingOver(true)
         }, 1500);
     }, [isLoadingOver]); // dependency so that each page load can show a brief loading screen
+    useEffect(() => {
+        console.table(displayData)
+    }, [displayData])
     const weeklyWeather = weeklyForecast.map((day) => {
         const precipDetails = day.precipDetails
         const windDetails = day.windDetails
-        console.table(windDetails)
-        console.table(precipDetails)
         return (
             <div className='flex-col'>
                 <DayForecast
@@ -47,7 +48,9 @@ const WeatherPanel = ({
             </div>
         )
     })
-    
+    const displayLoggedData = () => {
+        console.table(displayData)
+    }
     return (
         <>
             {!isLoadingOver 
@@ -63,6 +66,7 @@ const WeatherPanel = ({
                     </>
                 )
             }
+            <button onClick={displayLoggedData}>Click for Logs!</button>
         </>
     )
 };

@@ -8,6 +8,7 @@ function App() {
   const [userCity,setUserCity] = useState('New York');
   const [userState,setUserState] = useState('New York');
   const [fetchedData,setFetchedData] = useState(null);
+  const [hourlyData,setHourlyData] = useState(null);
 
     return (
         <div className='page'>
@@ -22,6 +23,7 @@ function App() {
                     userState={userState}
                     fetchedData={fetchedData}
                     setFetchedData={setFetchedData}
+                    setHourlyData={setHourlyData}
                   />
                 : <WeatherPanel 
                     displayData={fetchedData}
