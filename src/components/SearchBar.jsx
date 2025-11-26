@@ -43,9 +43,9 @@ const SearchBar = ({
         return input.toLowerCase().replace(/\s/g, "%2C")
     }
     const handleTransition = async () => {
-        const data = await fetchData();
+        // const data = await fetchData();
         console.log('...fetching data')
-        setFetchedData(data)
+        // setFetchedData(data)
         console.log('...data fetched and saved')
         setIsSearchComplete(true);
     }
